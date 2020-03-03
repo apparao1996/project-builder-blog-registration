@@ -24,6 +24,7 @@ public  class RegistrationValidation
          int capital=0;
          int lower=0;
          int num=0;
+         int special=0;
          for(int i=0;i<password.length();i++)
          {
         	 if((a[i]>=65)&&(a[i]<=90))
@@ -33,7 +34,8 @@ public  class RegistrationValidation
         	 else if((a[i]>=48)&&(a[i]<=58))
         		 num ++;
         	 else
-        		 return false;
+        		 special ++;
+        		 
          }
          if((capital>0)&&(lower>0)&&(num>0))
         	 return true;
